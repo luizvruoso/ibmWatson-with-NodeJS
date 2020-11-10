@@ -9,7 +9,10 @@ function sendMessageToAssistant(){
     // entao define como vazio para erro n aPI
 
     if(txtMessage === undefined || txtMessage === '') txtMessage = '';
-    else chat.innerHTML += "Você:  "+ txtMessage + '<br>';
+    else{
+        chat.innerHTML += "<div class='container-message-user'>"+ txtMessage + '</div>';
+    } 
+
 
     //limpa input
 
@@ -23,7 +26,7 @@ function sendMessageToAssistant(){
             if(ret.status === 'ERRO') alert(ret.data);
             else{
 
-                chat.innerHTML += 'Chatbot:  '+ ret.data.result.output.text + '<br>';
+                chat.innerHTML += "<div class='container-message-watson'>"+ ret.data.result.output.text + '</div>';
                 contextDialog = JSON.stringify(ret.data.result.context);
 
             }
