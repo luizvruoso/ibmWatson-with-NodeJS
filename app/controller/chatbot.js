@@ -13,7 +13,7 @@ module.exports.callAssistant = function (app, req, res) {
 
     const params = {
         input: { text },
-        workspaceId: 'Workspaceid',
+        workspaceId: '',
         context
     };
     //envia os dados ao serviço e retorna mensagem 

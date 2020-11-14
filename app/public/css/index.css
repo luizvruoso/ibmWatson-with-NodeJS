@@ -8,15 +8,16 @@
 
 }
 #title-container{
+    text-align: center;
     width: 100%;
     height: auto;
     padding: 10px;
     border-radius: 10px 10px 0px 0px ;
-    background-color: #989EA0 ;
+    border-bottom: 1px solid #ccc;
 }
 #title-container span{
     
-    color: #ffff;
+    color: #898989;
     font-size: 25px;
     text-transform: uppercase;
     
@@ -24,18 +25,42 @@
 }
 
 #body-container{
+    padding: 20px;
     height: 400px;
     overflow-y: auto;
 }
-#input-user{
+#input-user {
     padding: 20px;
 }
-#input-user input{
+#input-user input {
+    padding: 20px;
     height: 50px;
-    border-radius: 5px;
-    width: 80%;
-    padding-left: 10px;
-    border: 1px solid #ccc;
+}
 
+
+.container-message-user {
+    height: auto;
+    min-width: 10%;
+    display: table;
+    max-width: 80%;
+    background-color: #cacaca;
+    border-radius: 10px;
+    color: #404040;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.container-message-watson {
+    margin-bottom: 10px;
+    height: auto;
+    min-width: 10%;
+    max-width: 80%;
+    color: #404040;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;    
+    background-color: #dadada;
 }
 
